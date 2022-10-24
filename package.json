@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/StPfeffer/projeto-quinta/issues"
   },
-  "homepage": "https://github.com/StPfeffer/projeto-quinta#readme"
+  "homepage": "https://github.com/StPfeffer/projeto-quinta#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
