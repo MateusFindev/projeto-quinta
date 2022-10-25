@@ -1,3 +1,6 @@
+// TO DO: Insert logo
+// TO DO: Change closing menu symbol (MdOutlineRestaurantMenu)
+
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
@@ -14,16 +17,14 @@ const Navbar = () => {
         {/* LOGO AQUI */}
       </div>
       <ul className='app__navbar-links'>
-        <li className='p__opensans'><a href="#home">Home</a></li>
-        <li className='p__opensans'><a href="#about">About</a></li>
-        <li className='p__opensans'><a href="#menu">Menu</a></li>
-        <li className='p__opensans'><a href="#awards">Awards</a></li>
-        <li className='p__opensans'><a href="#contact">Contact</a></li>
+        <li className='p__opensans'><a href="#home">Início</a></li>
+        <li className='p__opensans'><a href="#notifications">Notificações</a></li>
+        <li className='p__opensans'><a href="#projects">Projetos</a></li>
+        <li className='p__opensans'><a href="#rooms">Salas</a></li>
+        <li className='p__opensans'><a href="#settings">Configurações</a></li>
       </ul>
       <div className='app__navbar-login'>
-        <a href="#login" className='p__opensans'>Log In / Register</a>
-        <div></div>
-        <a href="/" className='p__opensans'>Book Table</a>
+        <a href="#login" className='p__opensans'>Entrar / Cadastrar</a>
       </div>
       <div className='app__navbar-smallscreen'>
         <FaBars color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
@@ -32,11 +33,11 @@ const Navbar = () => {
           <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
             < MdOutlineRestaurantMenu fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)} />
             <ul className='app__navbar-smallscreen_links'>
-              <li className='p__opensans'><a href="#home">Home</a></li>
-              <li className='p__opensans'><a href="#about">About</a></li>
-              <li className='p__opensans'><a href="#menu">Menu</a></li>
-              <li className='p__opensans'><a href="#awards">Awards</a></li>
-              <li className='p__opensans'><a href="#contact">Contact</a></li>
+              <li className='p__opensans'><a href="#home">Início</a></li>
+              <li className='p__opensans'><a href="#notifications">Notificações</a></li>
+              <li className='p__opensans'><a href="#projects">Projetos</a></li>
+              <li className='p__opensans'><a href="#rooms">Salas</a></li>
+              <li className='p__opensans'><a href="#settings">Configurações</a></li>
             </ul>
           </div>
         )}
