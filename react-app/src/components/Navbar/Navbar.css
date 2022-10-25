@@ -26,7 +26,7 @@
 }
 
 .app__navbar-links li {
-    margin: 0 1rem; /*0 em cima e em baixo*/
+    margin: 0 1rem;
     cursor: pointer;
 }
 
