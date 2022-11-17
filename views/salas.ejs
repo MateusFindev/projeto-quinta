@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <title>Salas</title>
 </head>
+
 <body>
-  <%- include('../components/sidebar.ejs'); %>
-  
+  <div class="sidebar">
+    <%- include('../components/sidebar.ejs'); %>
+  </div>
+
   <div class="container">
     <h1 class="text-center mt-3 mb-3">
       <%= title %>
     </h1>
 
-    <% if (action == 'add') { %>
+    <% if (action=='add' ) { %>
 
       <div class="card">
         <div class="card-header">Sample Form</div>
@@ -35,7 +39,7 @@
         </div>
       </div>
 
-      <% } else if (action=='edit') { %>
+      <% } else if (action=='edit' ) { %>
         <div class="card">
           <div class="card-header">Sample Form</div>
           <div class="card-body">
@@ -109,4 +113,5 @@
 
   </div>
 </body>
+
 </html>
